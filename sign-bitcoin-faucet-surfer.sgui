@@ -1,0 +1,7 @@
+SignTool=C:\Program Files\Microsoft SDKs\Windows\v7.0\Bin\signtool.exe
+PFX=C:\Documents and Settings\User\My Documents\Downloads\cb15253.p12
+Password=keIc6kopAikq
+TimeStamp=http://timestamp.verisign.com/scripts/timstamp.dll
+ProgramTitle=Bitcoin Faucet Surfer by: William Nabaza of www.Nabaza.com and www.NameHost.biz
+ProgramURL=http://software.nabaza.com
+File1=C:\Documents and Settings\User\Desktop\bitcoin-faucet-surfer.exe\bitcoin-faucet-surfer.exe

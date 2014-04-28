@@ -1,0 +1,700 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Idea Informer &#187; Feedback 2.0</title>
+<meta name="description" content="Idea Informer">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon"href="http://idea.informer.com/favicon.ico">
+<link rel="stylesheet" href="/s/style.css" type="text/css" />
+
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="0">
+
+<!--[if IE]>
+<link rel="stylesheet" href="/s/ie.css" type="text/css" />
+<![endif]-->
+	<script type="text/javascript" language="javascript"> var siteAdr = '/'; var curUrl = 'http://nabazasoftware.idea.informer.com/proj/?ia=82018'; </script>
+	<script type="text/javascript" language="JavaScript" src="/j/main.js"></script>
+	<script type="text/javascript" language="JavaScript" src="/j/JsHttpRequest.js"></script>
+	<script type="text/javascript" language="JavaScript" src="/j/search.js"></script>
+	<script type="text/javascript" language="JavaScript" src="/j/jquery.js"></script>
+        <script type="text/javascript" language="JavaScript" src="/j/reg.js"></script>
+	    </head>
+<body id="main_body">
+
+
+<div id="header">
+	<div id="logo">
+		<a href="http://idea.informer.com/"><img src="/i/logo2.gif" alt="" /></a>
+	</div>
+	<div id="about_proj">
+		<a href="http://idea.informer.com/static/about">About</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://idea.informer.com/news/">News</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://idea.informer.com/faq/">FAQ</a>
+	</div>
+	<div id="header_login">
+		                    <a href="javascript: void(0);" onclick="ShowPopUpL('reg');">Sign up</a> <a href="javascript: void(0);" onclick="ShowPopUpL('login');" id="exit_h">Sign in</a>			</div>
+</div>
+	<script type="text/javascript" src="/j/Gettext.js"></script>
+<script language="javascript" type="text/javascript">
+
+    var rep = 0;
+	function ShowReply( id ) {
+	    if ( rep ) {
+		    _v('reply_'+rep).innerHTML = '';
+		}
+		if (rep == id) {
+		    rep = 0;
+		}
+		else {
+		    rep = id;
+			
+                    			_v('reply_'+id).innerHTML = ''+
+                            '<div style="width:85%"><div id="mcom_err" style="color:red; display:none;">&nbsp;</div>' +
+                                '<form method="post" id="fr" action="/proj/">' +
+                                    '<input type="hidden" name="ia" value="82018" />' +
+                                    '<input type="hidden" name="fm[parent]" value="'+id+'" />' +
+                                     '<fieldset><table cellpadding="2"><tr><td style="width:110px;">Name</td><td style="width:152px;"><input type="text" id="author" name="fm[author]" style="width:144px;" /></td><td style="width:215px;" class="gray" align="left"></td><td style="width:130px; vertical-align:top; line-height:160%;" rowspan="2"></td></tr>'+ '<tr><td>E-mail</td><td><input type="text" id="email" name="fm[email]" style="width:144px;" /></td><td class="gray" align="left">Required</td></tr></table><br /></fieldset>' +  '<fieldset>' +
+                                    '<textarea name="fm[story]" cols="" rows="" id="r_story" style="width: 400px; height: 80px;"></textarea>'+
+                                     '<table><tr><td>Enter the code:</tr><td>&nbsp;&nbsp;<input type="text" id="code" name="fm[code]" value="" style="width: 95px;" /></td><td> <img src="/turing.php?r=51" alt="" /></td></tr></table>' +  '<input type="button" onclick="SubmICom();" value="Leave a comment" class="button_white" />' + '</fieldset>' +
+                                '</form>' +
+                            '</div>';
+                    		}
+	}
+	
+	function SaveAnsw( what ) {
+
+	    _v('what').value = what;
+		_v('answf').submit();
+	}
+	
+	function DelCom( id ) {
+	    CGo('/proj/?ia=82018&mod=delcom&idc='+id, 'Are you sure you want to delete the comment?');
+	}
+	
+	var iam_logined = 0;
+	function after_login() {
+	    iam_logined = 1;
+	}
+    function SubmMCom() {
+                if (typeof inl_act == 'undefined')
+                    inl_act = 1;
+		if (iam_logined || (1==inl_act && _v('noreg_name').value != '' && _v('noreg_email').value != '' && _v('noreg_code').value != '')) {
+		    _v('ucform').submit(); 
+		}
+		else {
+		    _v('inline_noreg_err').innerHTML = 'Fill in the required information';
+			_v('inline_noreg_err').style.display='block';
+		}
+    }	
+	 
+	function SubmICom() {
+                if (typeof inl_act == 'undefined')
+                    inl_act = 1;
+		if (iam_logined || (1==inl_act && _v('author').value != '' && _v('email').value != '' && _v('code').value != '')) {
+		    _v('fr').submit(); 
+		}
+		else {
+		    _v('mcom_err').innerHTML = 'Fill in the required information';
+			_v('mcom_err').style.display='block';
+		}        
+	}
+
+</script>
+
+<div id="conteiner">
+	<div class="v_line">
+	<div class="content_cont">
+<!--left_part-->
+		<div class="left_part">
+        
+			<div class="profile_title">
+								<div class="rank">
+					<span class="rank_pos">1</span><span class="rank_text">place</span>
+				</div>
+								<div class="page_subheader">
+					<a href="/"><img src="/files/images/resize/3151201204355.jpg" alt="" /></a>
+					<strong>Feedback for www.Nabaza.com Software</strong>
+					<a href="/">All the ideas and discussions</a>
+					<div class="cl"><!-- --></div>
+				</div>
+			</div>
+	
+			<div class="big_idea_block bib2">
+				<div class="big_idea_text">
+				<div class="big_idea_left">
+					<div class="vote" id="vote_cnt">
+						<span>2</span>
+                                                votes                                                                                                                                                            <a href="javascript: void(0);" onclick="Vote( 82018, 'vote_cnt', 0, 'lblblock', 6070 );" class="vote_button">Vote</a>
+                                                                                                    					</div>
+				</div>
+				
+					<h1>
+                                              <img id="idea_cat_82018" src="/i/ideacat/quest.gif"/>                                               Bitcoin Faucet Surfer by: William Nabaza of www.Nabaza.com and www.NameHost.biz</h1>
+					<p>
+                                                                                            Bitcoin Faucet Surfer by: William Nabaza of www.Nabaza.com and www.NameHost.biz<br />
+Bitcoin Faucet Surfer - 1 Program - 100+ Faucet by: William R. Nabaza of www.Nabaza.com, Prepare your bitcoin address to put in the box provided that you can do for 30 seconds or less and wait for another faucet to open up. If you are done on each faucet close the tab so you will not run out of memory. Do this everyday so you are sure you will earn bitcoin. If you want a customized program like this you need to donate to me via bitcoin. Email me at william@nabaza.com. Every week I'll be adding lots of bitcoin faucets to it, easily upgrade by downloading the latest version.<br />
+http://software.nabaza.com<br />
+click on bitcoin-faucet-surfer.exe<br />
+http://bitbin.it/qOPPeqoi                                                                                    </p>
+				</div>
+				<div class="cl"><!--   --></div>
+					<div class="post_panel">
+						<div class="user_comment">
+							<a href="http://idea.informer.com/users/weblord">weblord</a>, 15.03.2014, 18:13
+						</div>
+                                                    <div class="left">
+
+                        </div>                                         </div>
+                    <div class="cl"><!-- --></div>
+          
+                    				
+			</div>
+
+                        
+            
+            <div class="blue_block">
+			<div class="blue_lt">
+			<div class="blue_rt">
+			<div class="blue_lb">
+			<div class="blue_rb">
+			<div class="blue_block_status">
+                        
+                                                        
+                                Idea status:
+                                                                    <b>
+                                                                                    in process                                                                            </b>
+                                
+                                			</div>
+			</div>          
+			</div>          
+			</div>           
+			</div>
+			</div>
+     
+			<h2 class="comments">Comments</h2>
+                            
+                                                                                                                                <div class="comment_block">
+                                        <div class="user_ansver">
+                                                <a name="#30840" style="background: none;"></a><a href="http://idea.informer.com/users/weblord">weblord</a>, 19.03.2014, 06:37
+                                        </div>
+                                        <div class="commnent_text">
+                                                                                            8:17 PM 3/18/2014:<br />
+- Added Get my own bitcoin address<br />
+- Added My earnings to check, compare and verify bitcoin earnings<br />
+- Added Pause/Unpause command to pause the 30 second surfing timer <br />
+- Added "Download latest version" to download official latest version                                                                                        <div class="comment_panel">
+												                                                    <a href="javascript: ShowReply( '30840' );">Reply</a>
+                                                    						
+						                                                <span id="reply_30840"><!-- --></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                                                                                                                <div class="comment_block">
+                                        <div class="user_ansver">
+                                                <a name="#30876" style="background: none;"></a><a href="http://idea.informer.com/users/weblord">weblord</a>, 20.03.2014, 06:45
+                                        </div>
+                                        <div class="commnent_text">
+                                                                                            8:43 AM 3/19/2014:<br />
+- Added 7 more faucet websites<br />
+- type once the bitcoin address and the long bitcoin address can be save on your computer<br />
+- automatic paste of bitcoin address on fields provided by pressing Windows key + b<br />
+- if you want to change your bitcoin address, click on "Change my Bitcoin Address" on the menu and paste the new bitcoin address                                                                                        <div class="comment_panel">
+												                                                    <a href="javascript: ShowReply( '30876' );">Reply</a>
+                                                    						
+						                                                <span id="reply_30876"><!-- --></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                                                                                                                <div class="comment_block">
+                                        <div class="user_ansver">
+                                                <a name="#30910" style="background: none;"></a><a href="http://idea.informer.com/users/weblord">weblord</a>, 22.03.2014, 10:31
+                                        </div>
+                                        <div class="commnent_text">
+                                                                                            9:32 AM 3/21/2014<br />
+- Added 45 more faucet websites<br />
+- cleaned the logo a little bit<br />
+- Rearranged the order of faucets from top payers first<br />
+- Updated other existing faucet websites<br />
+- Removed "dead" faucet websites                                                                                        <div class="comment_panel">
+												                                                    <a href="javascript: ShowReply( '30910' );">Reply</a>
+                                                    						
+						                                                <span id="reply_30910"><!-- --></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                                                                                                                <div class="comment_block">
+                                        <div class="user_ansver">
+                                                <a name="#30965" style="background: none;"></a><a href="http://idea.informer.com/users/weblord">weblord</a>, 25.03.2014, 08:43
+                                        </div>
+                                        <div class="commnent_text">
+                                                                                            8:23 AM 3/25/2014<br />
+- Added new stats/earnings checker<br />
+- Added new groups of 25 new bitcoins<br />
+- removed non-functional faucets<br />
+- total no. of bitcoin faucets: 126                                                                                        <div class="comment_panel">
+												                                                    <a href="javascript: ShowReply( '30965' );">Reply</a>
+                                                    						
+						                                                <span id="reply_30965"><!-- --></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                                                                                                                <div class="comment_block">
+                                        <div class="user_ansver">
+                                                <a name="#31044" style="background: none;"></a><a href="http://idea.informer.com/users/weblord">weblord</a>, 29.03.2014, 10:15
+                                        </div>
+                                        <div class="commnent_text">
+                                                                                            5:48 AM 3/29/2014<br />
+- Total of 129 bitcoin faucet websites<br />
+- Added another website to check and verify your earnings<br />
+- Added the icon, no longer will it have problems with the icon<br />
+- Added a check mark whenever it's paused, and removed the checkmark when it's not paused.                                                                                        <div class="comment_panel">
+												                                                    <a href="javascript: ShowReply( '31044' );">Reply</a>
+                                                    						
+						                                                <span id="reply_31044"><!-- --></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                                                                                                                                                                                                            <div class="comment_block">
+                                        <div class="user_ansver">
+                                                <a name="#31069" style="background: none;"></a><a href="http://idea.informer.com/users/weblord">weblord</a>, 30.03.2014, 11:13
+                                        </div>
+                                        <div class="commnent_text">
+                                                                                            10:38 AM 3/30/2014<br />
+- Total of 139 bitcoin faucet websites, removed the "dried" faucets and replace with new ones<br />
+- Added the ability to see today's bitcoin exchange rate                                                                                        <div class="comment_panel">
+												                                                    <a href="javascript: ShowReply( '31069' );">Reply</a>
+                                                    						
+						                                                <span id="reply_31069"><!-- --></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                                        
+                            <a name="comment_form"></a>
+
+                                                            <h2 class="r_title no_bg pl0"><a href="javascript: void(0);" onclick="_v('addcomf').style.display='block';" style="color: #FF7E0B;">Leave a comment</a></h2>
+
+                                
+                                <a name="addcom"></a>
+                                <span id="addcomf" style="display:none;">
+                                    <form action="/proj/#comment_form" id="ucform" method="post">
+                                        <input type="hidden" name="ia" value="82018" />
+                                        <input type="hidden" name="fm[parent]" value="0" />
+                                        
+                                        
+                                        <script language="javascript" type="text/javascript">
+	var inl_act = 1;         var no_redirect = 1;
+	    
+		function NoRedirectFunc( login ) {
+		    _v('inline_auth_block').style.display = 'none';
+			if (null != login) {
+
+                            			    _v('verify_logged').innerHTML = 'You are signed in as <a href="http://idea.informer.com/users/'+login+'" class="idea_author_name">'+login+'</a>';
+                                                        _v('header_login').innerHTML = 'You are signed in as <a href="http://idea.informer.com/profile.php">'+login+'</a><a href="http://idea.informer.com/index.php?logout=1" id="exit_h">Sign out</a>';
+			
+			} else {
+			
+			    _v('verify_logged').innerHTML = 'You are signed in';
+			
+			}
+			
+			if ('undefined' != typeof(after_login)) {
+                after_login();
+            }
+            
+            ShowPopUpL('all');  
+            
+            
+            _v('verify_logged_cont').style.display = 'block';
+            //_v('vbl').style.display = 'block';
+            
+		}
+			
+	</script>
+ <div class="gr_block_lt" id="verify_logged_cont" style="display: none;">
+			    <div class="gr_block_rt">
+			    <div class="gr_block_lb">
+			    <div class="gr_block_rb">
+			    <div class="gr_block_content">
+                                    				    <div id="verify_logged"></div>
+			    </div>
+			    </div>
+			    </div>
+			    </div>
+			    </div>				
+			    
+								<div class="gr_block_lt1" id="inline_auth_block">
+				<div class="gr_block_rt1">
+				<div class="gr_block_lb1">
+				<div class="gr_block_rb1">
+				<div class="gr_block_content1 with_tab_menu">
+					<table class="tab_menu1">
+						<tr>
+							                                                            <td class="active" id="ib1" style="text-align: left; width: 70%; cursor: hand;" onclick="RegInlShb(1);">
+                                                                <div>
+                                                                    <div id="ib1na">Without registration</div>
+                                                                    <div id="ib1a" style="display:none;"><a href="javascript: RegInlShb(1);">Without registration</a></div>
+                                                                </div>
+                                                            </td>
+                                                        							                                                        <td class="" id="ib2"style="cursor: hand;" onclick="RegInlShb(2);">
+                                                            <div>
+                                                                <div id="ib2na" style="display:none;">Sign in</div>
+                                                                <div id="ib2a"><a href="javascript: RegInlShb(2);">Sign in</a></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="" id="ib3" style="border-right:0;cursor: hand;" onclick="RegInlShb(3);">
+                                                            <div>
+                                                                <div id="ib3na" style="display:none;">Sign up</div>
+                                                                <div id="ib3a"><a href="javascript: RegInlShb(3);">Sign up</a></div>
+                                                            </div>
+                                                        </td>
+                                                        						</tr>
+					</table>
+										<div id="no_registration">
+					    <div class="red_alarm" style="margin-bottom:20px;display:none;" id="inline_noreg_err"><!-- --></div>
+						<table class="form1">
+							<tr>
+								<td class="lbl">Name</td>
+								<td><input type="text" id="noreg_name" name="fm[noreg_name]" value="" class="inp" /></td>
+								<td class="input_req">Required</td>
+							</tr>
+							<tr>
+								<td class="lbl">e-mail</td>
+								<td><input type="text" id="noreg_email" name="fm[noreg_email]" value="" class="inp" /></td>
+								<td class="input_req">Required</td>
+							</tr>
+
+							<tr>
+								<td class="lbl"><img src="/turing.php?r=33" alt="" /></td>
+								<td><input type="text" id="noreg_code" name="fm[noreg_code]" class="inp" /></td>
+								<td class="input_req">Enter the code</td>
+							</tr>
+
+						</table>
+						<div class="cl"><!--  --></div>
+					</div>
+					
+                                                                                    <div id="verify_auth" style="display:none;">
+                                                <div class="red_alarm" id="auth_login_err" style="display: none;"><!-- --></div>
+                                                <table>
+                                                        <tr>
+                                                                <td class="lbl">Login</td>
+                                                                <td><input type="text" id="auth_login" value="" class="inp" /></td>
+                                                                <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="lbl">Password</td>
+                                                                <td><input type="password" id="auth_pass" value="" class="inp" /></td>
+                                                                <td><a href="javascript: void(0);" onclick="ShowPopUpL('forgot');" class="blank1">Forgot your password?</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td></td>
+                                                                <td class="cent"><input type="checkbox" id="auth_remember_me" checked="checked" /><label for="auth_remember_me">Remember me</label></td>
+                                                                <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td></td>
+                                                                <td><span id="auth_login_wait" style="display: none; float: left; margin-top: 5px;"><img src="/i/indicator-dark-gray.gif" class="wait" alt="" /></span><a href="javascript: SignIn( 'auth_login_err', 'auth_login_wait', _v('auth_login').value, _v('auth_pass').value, (_v('auth_remember_me').checked ? 1 : 0), 'nabazasoftware' );" class="button_short">Sign in</a></td>
+                                                                <td></td>
+                                                        </tr>
+                                                </table>
+                                                <div class="cl"><!--  --></div>
+                                            </div>
+					
+                                            <div id="registration" style="display:none;">
+                                                <div class="red_alarm" id="inline_reg_err" style="display:none;"><!-- --></div>
+                                                <table class="form1">
+                                                    <tr>
+                                                            <td class="lbl">Login</td>
+                                                            <td><input type="text" id="reg_login" value="" class="inp" onmouseout="CheckLogin( 'inline_logind1', 'inline_logind2', _v('reg_login').value );" /></td>
+                                                            <td class="input_req">Use 3 to 18 characters, Latin characters or numbers</td> <td style="padding-left: 15px;"><span id="inline_logind1" style="display: none; color: red;" class="alarm_icon">This login is not available</span><span id="inline_logind2" style="display: none;" class="ok_icon">This login is available</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                            <td class="lbl">e-mail</td>
+                                                            <td><input type="text" id="reg_email" value="" class="inp" onmouseout="CheckLogin( 'inline_logind1', 'inline_logind2', _v('reg_login').value );" /></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                            <td class="lbl">Password</td>
+                                                            <td><input type="password" id="reg_pass" value="" class="inp" /></td>
+                                                            <td class="input_req">Use 3 to 18 characters, Latin characters or numbers</td>
+                                                            <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                            <td class="lbl">Re-type password</td>
+                                                            <td><input type="password" id="reg_pass2" value="" class="inp" /></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                            <td></td>
+                                                            <td class="cent"><input type="checkbox" id="reg_remember_me" checked="checked" /><label for="reg_remember_me">Remember me</label></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                            <td></td>
+                                                            <td><span id="inline_reg_wait" style="display: none; float: left; margin-top: 5px;"><img src="/i/indicator-dark-gray.gif" class="wait" alt="" /></span><a href="javascript: Reg('inline_reg_err', 'inline_reg_wait', _v('reg_login').value, _v('reg_email').value, _v('reg_pass').value, _v('reg_pass2').value, (_v('reg_remember_me').checked ? 1 : 0), 'nabazasoftware');" class="button_medium">Sign up</a></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                    </tr>
+                                                    </table>
+                                                <div class="cl"><!--  --></div>
+                                            </div>
+                                        				
+				</div>
+				</div>
+				</div>
+				</div>
+				</div>
+				
+                                        <div id="user_comment_form">
+                                            <fieldset>
+                                                <textarea name="fm[story]" cols="" rows="" style="border: 1px solid #999;height:131px;font-size:12px;padding-left:2px;"></textarea>
+                                                <input type="button" value="Leave a comment" onclick="SubmMCom();" class="button_white" />
+                                            </fieldset>
+                                        </div>
+                                    </form>
+                                </span>
+
+				<script type="text/javascript">
+                                    if (document.location.hash === '#comment_form') _v('addcomf').style.display='block';
+				</script>
+                            		</div>    
+<!--right_part-->
+		<div class="right_part">
+    <ul class="right_menu">
+        <li><a href="http://idea.informer.com/static/about" class="icon1">What is Idea Informer?</a></li>
+
+        
+                            <li><a href="/proj/rss?ia=82018" class="icon4" target="_blank">RSS feed</a></li>
+            </ul>
+
+    
+    </div>
+<!--/right_part-->
+		<div class="cl"></div>
+	</div>
+	</div>
+</div>
+
+
+<div class="bottom_u"></div>
+
+    
+	<div class="popup" id="registr_popup" style="display:none;">
+		<div class="popup_top">
+		<a class="popup_close" title="Close" onClick="_v('registr_popup').style.display = 'none'; return false;"></a> <div class="popup_title">Sign up</div>
+
+		<div class="gr_block_lt">
+		<div class="gr_block_rt">
+		<div class="gr_block_lb">
+		<div class="gr_block_rb">
+			
+            <div class="red_alarm" id="reg_err" style="display:none;"><!-- --></div>            
+			<form action="/" method="post">
+			<fieldset>
+			<br />
+			<table id="registr_table">
+			<tr>
+				<td class="wdt170 right"><big>Login</big></td>
+				<td><input type="text" name="fm[login]" id="login" value="" class="text_input" onmouseout="CheckLogin( 'logind1', 'logind2', _v('login').value );" /></td>
+				<td class="login_status green"><span id="logind1" style="display: none; color: red;"><img src="/i/alarm_icon.gif" alt="" />This login is not available</span><span id="logind2" style="display: none;"><img src="/i/login_ok.gif" alt="" />This login is available</span></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="2" class="gray no_padding">Use 3 to 18 characters, Latin characters or numbers</td>
+			</tr>
+			<tr>
+				<td class="wdt170 right"><big>E-mail</big></td>
+				<td><input type="text" name="fm[email]" id="email" class="text_input" /></td>
+				<td class="login_status green"></td>
+			</tr>
+			<tr>
+				<td class="wdt170 right"><big>Password</big></td>
+				<td><input type="password" name="fm[pass]" id="pass" class="text_input" /></td>
+				<td class="pass_q"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="2" class="gray no_padding">Use 3 to 18 characters, Latin characters or numbers</td>
+			</tr>
+			<tr>
+				<td class="wdt170 right"><big>Re-type password</big></td>
+				<td><input type="password" name="fm[pass2]" id="pass2" class="text_input" /></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="wdt170 right"></td>
+				<td><input name="fm[save]" type="checkbox" id="mam_my" class="checkbox" value="1" /> <label for="mam_my">Remember me</label></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="wdt170 right"></td>
+				<td><span id="reg_wait" style="display: none;"><img src="/i/indicator-dark-gray.gif" class="wait" alt="" /></span><input type="submit" id="registr_button" value="Register" onclick="Reg('reg_err', 'reg_wait', _v('login').value, _v('email').value, _v('pass').value, _v('pass2').value, (_v('mam_my').checked ? 1 : 0), 'nabazasoftware'); return false;" /></td>
+				<td></td>
+			</tr>
+			</table>
+			</fieldset>
+			</form><br />
+
+		</div>
+		</div>
+		</div>
+		</div>
+		
+		<div class="have_akk">
+                    Already registered? <a href="javascript: void(0);" onclick="ShowPopUpL('login');">Sign in!</a>		</div>
+
+	</div>
+		</div>
+    
+	<div class="popup" id="login_popup" style="display:none;">
+     <link rel="stylesheet" href="/s/openid.css" /><script type="text/javascript" src="/j/jquery.js"></script><script type="text/javascript" src="/j/openid-jquery.js"></script><script type="text/javascript">
+            $(document).ready(function() {
+                openid.init('openid_identifier');
+            });
+
+	    function goOID(){
+	        $("#e_form").toggle();
+      	        $("#oid_sel").toggle();
+     	        $("#oid_b").toggle();      	        
+     	        $("#b_enter").toggle();
+	    }
+        </script>        
+	<div class="popup_top">
+		<a class="popup_close" title="close" onClick="_v('login_popup').style.display = 'none'; return false;"></a>
+
+		<div class="popup_title">Sign in</div>
+
+		<div class="gr_block_lt">
+		<div class="gr_block_rt">
+		<div class="gr_block_lb">
+		<div class="gr_block_rb">
+
+			<div class="red_alarm" id="login_err" style="display: none;"><!-- --></div>
+                        <div id="e_form">
+			<form action="/" method="post">
+			<fieldset>
+			<br />
+			<table id="registr_table" border="0">
+			<tr>
+				<td class="wdt170 right"><big style="line-height:normal;">Login</big></td>
+				<td><input type="text" name="system_login" id="system_login" value="" class="text_input" /></td>
+				<td class="login_status green"></td>
+			</tr>
+			<tr>
+				<td class="wdt170 right"><big style="line-height:normal;">Password</big></td>
+				<td><input type="password" name="system_pass" id="system_pass" value="" class="text_input" /></td>
+				<td style="padding-left:15px;"><a href="javascript: void(0);" onclick="ShowPopUpL('forgot');">Forgot your password?</a></td>
+			</tr>
+			<tr>
+				<td class="wdt170 right"></td>
+				<td><input name="remember" type="checkbox" id="mam_my2" class="checkbox" value="1" /> <label for="mam_my2">Remember me</label></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="wdt170 right"></td>
+				<td><span id="login_wait" style="display: none;" ><img src="/i/indicator-dark-gray.gif" class="wait" alt="" /></span><input type="submit" id="enter_button" value="Enter" onclick="SignIn( 'login_err', 'login_wait', _v('system_login').value, _v('system_pass').value, (_v('mam_my2').checked ? 1 : 0), 'nabazasoftware' ); return false;" /></td>
+				<td></td>
+			</tr>
+			</table>
+			</fieldset>
+			</form><br />
+			</div>
+
+			<div id="oid_sel" style="padding:30px; display:none">
+			 <!-- Simple OpenID Selector -->
+			<form action="/openid.php" method="get" id="openid_form">
+			    <input type="hidden" name="act" value="verify" />
+
+			    <div id="openid_choice">
+				<div id="openid_btns"></div>
+			    </div>
+
+			    <div id="openid_input_area">
+				<input id="openid_identifier" name="openid_identifier" type="text" value="http://" />
+				<input id="openid_submit" type="submit" value="Sign-In"/>
+			    </div>
+			    <noscript>
+				<p>OpenID is service that allows you to log-on to many different websites using a single indentity.
+					Find out <a href="http://openid.net/what/">more about OpenID</a> and <a href="http://openid.net/get/">how to get an OpenID enabled account</a>.</p>
+			    </noscript>
+			</form>
+			<!-- /Simple OpenID Selector -->
+		        </div>
+
+		</div>
+		</div>
+		</div>
+		</div>
+		
+		<div class="have_akk">
+                    First time here? <a href="javascript: void(0);" onclick="ShowPopUpL('reg');">Register now. It's very easy!</a>                    <span id="oid_b"><a href="#" onclick="goOID(); return false;">OpenID</a></span>
+                    <span id="b_enter" style="display:none"><a href="#" onclick="goOID(); return false;">Simple Sign In</a></span>
+		</div>
+	</div>
+		</div>
+    
+	<div class="popup" id="pass_rem" style="display: none;">
+	    <div class="popup_top">
+		<a class="popup_close" title="Close" onClick="_v('pass_rem').style.display = 'none'; return false;"></a> <div class="popup_title">Sign in</div>
+
+		<div class="gr_block_lt">
+		<div class="gr_block_rt">
+		<div class="gr_block_lb">
+		<div class="gr_block_rb">
+			
+			<div class="blue_alarm">
+			<div class="blue_alarm_top">
+                <span id="frg_info_txt">
+                    Forgot your password? Enter your e-mail, and we will send you the password.                </span>
+			</div>
+			</div>
+
+			<form action="/" method="post">
+			<fieldset>
+			<br />
+			<table id="registr_table" border="0">
+			<tr>
+				<td class="wdt170 right"><big>E-mail</big></td>
+				<td><input type="text" name="forgot_email" id="forgot_email" value="" class="text_input" /></td>
+				<td class="login_status red"><span id="forgot_err" style="display: none;"><!-- --></span></td>
+			</tr>
+			<tr>
+				<td class="wdt170 right"></td>
+				<td><span id="forgot_wait" style="display: none;" ><img src="/i/indicator-dark-gray.gif" class="wait" alt="" /></span><input type="submit" id="send_button" value="" onclick="Forgot('forgot_err', 'frg_info_txt', 'forgot_wait', _v('forgot_email').value); return false;" /></td>
+				<td></td>
+			</tr>
+			</table>
+			</fieldset>
+			</form><br />
+
+		</div>
+		</div>
+		</div>
+		</div>
+		
+		<div class="have_akk">
+                    Have you arrived here by mistake? <a href="javascript: void(0);" onclick="ShowPopUpL('login');">Sign in</a> or <a href="javascript: void(0);" onclick="ShowPopUpL('reg');" style="margin-left:0;">Register</a>		</div>
+
+	</div>
+    	</div>
+    
+
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4959546-3");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+    <script type="text/javascript">document.write("<img src='http://hits.informer.com/log.php?id=396&r="+ Math.round(100000 * Math.random()) + "' />");</script>
+
+</body>
+</html>

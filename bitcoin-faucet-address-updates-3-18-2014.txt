@@ -1,0 +1,90 @@
+9:09 AM 4/26/2014:
+- Total of 214 bitcoin faucet websites
+- Added a progress bar so you can know when the program is fully-loaded and ready
+- Added a third youtube video tutorial on "how to use?" menu
+- Added OnTop menu, so you can toggle switch AlwaysOnTop or not, with Windows + t as keyboard shortcut
+- Added "Show Window" menu to show window or Windows + s as keyboard shortcut, by default it's shown
+- Added "Hide Window" menu to hide the window or Windows + h as keyboard shortcut
+- Added these shortcut keys on "How to use?" menu
+- Attempting to make it both autosurf and manual surfing for faucet websites, pls bear with me and notice the submenu
+- Categorizing and putting easy link on faucets that have already paid me.
+
+10:57 PM 4/17/2014
+- Total of 210 bitcoin faucet websites
+- Returned the time of 30 seconds per 2 faucets since you can pause it any time during surfing
+- Added 2 banners on top just below the buttons
+- One can now accurately refresh/reload the internal browser just in case the website needed refreshing
+
+9:41 AM 4/17/2014
+- Total of 206 bitcoin faucet websites
+- Added working Previous and Refresh buttons to surf back and refresh faucets
+
+9:01 PM 4/14/2014
+- Added Bitcoin Faucet Surfer Progress bar as part of the internal browser
+- Turned the internal browser into horizontal browsing
+- Now accepting advertisers on the internal browser itself
+- Total of 204 bitcoin faucet websites
+
+9:05 AM 4/13/2014
+- Modified Pause/Unpause menu to Pause/Continue
+- Added Windows + p to Pause and Continue if 60 seconds is still fast 
+- Added Bitcoin Faucet Surfer Progress bar to encourage you to finish what you've started
+- Total of 192 bitcoin faucet websites
+
+7:44 AM 4/12/2014
+- created internal browser for surfing 2 faucets every 60 seconds
+- added the menu "8 Top Paying Faucets" (these are the faucets that paid me so far)
+- Majority of faucet have their bitcoin address field already filled up for you automatically, giving you more time to complete captcha
+- You may still request the old version with no internal browser via email, 1 faucet for every 30 seconds, but I already stopped developing it to focus my attention on this new version.
+- With an internal browser built-in, you can now autosurf 2 faucet websites per 60 seconds, but it has changed it's file size from 198 kb to 205 kb, I think a small price to pay.
+- Total of 156 bitcoin faucet websites
+
+8:43 AM 4/6/2014
+- removed dried faucet
+- implemented Shortcut keys: 
+Press Windows + b = to paste Bitcoin Address 
+Press Windows + r = to Restart
+Press Windows + x = to Exit
+- added video tutorial on How to use
+- Total of 145 bitcoin faucet websites
+
+
+10:38 AM 3/30/2014
+- Total of 139 bitcoin faucet websites, removed the "dried" faucets and replace with new ones
+- Added the ability to see today's bitcoin exchange rate
+
+
+5:48 AM 3/29/2014
+- Total of 129 bitcoin faucet websites
+- Added another website to check and verify your earnings
+- Added the icon, no longer will it have problems with the icon
+- Added a check mark whenever it's paused, and removed the checkmark when it's not paused.
+
+
+8:23 AM 3/25/2014
+- Added new stats/earnings checker
+- Added new groups of 25 new bitcoins
+- removed non-functional faucets
+- total no. of bitcoin faucets: 126 
+
+
+9:32 AM 3/21/2014
+- Added 45 more faucet websites
+- cleaned the logo a little bit
+- Rearranged the order of faucets from top payers first
+- Updated other existing faucet websites
+- Removed "dead" faucet websites
+
+
+8:43 AM 3/19/2014:
+- Added 7 more faucet websites
+- type once the bitcoin address and the long bitcoin address can be save on your computer
+- automatic paste of bitcoin address on fields provided by pressing Windows key + b
+- if you want to change your bitcoin address, click on "Change my Bitcoin Address" on the menu and paste the new bitcoin address
+
+
+8:17 PM 3/18/2014:
+- Added Get my own bitcoin address
+- Added My earnings to check, compare and verify bitcoin earnings
+- Added Pause/Unpause command to pause the 30 second surfing timer 
+- Added "Download latest version" to download official latest version

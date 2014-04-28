@@ -1,0 +1,8 @@
+5:08 PM 4/4/2014
+- try the news/updates from idea.informer.com if they use modified time of file
+- see if it can download the news from the same site.
+
+4:15 AM 3/19/2014 = {DONE}
+- type once the bitcoin address, can be saved = {DONE}
+- automatic paste of bitcoin address on fields provided. = {DONE}
+InputBox, FileAppend, FileRead , hotstrings
